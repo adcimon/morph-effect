@@ -26,21 +26,21 @@
 			float _BlendFactor;
 			float _OffsetFactor;
 
-			struct VertexInput
+			struct VertexData
 			{
 				float4 position : POSITION;
 				float2 uv : TEXCOORD0;
 			};
 
-			struct FragmentInput
+			struct FragmentData
 			{
 				float4 position : SV_POSITION;
 				float2 uv : TEXCOORD0;
 			};
 
-			FragmentInput Vertex( VertexInput v )
+			FragmentData Vertex( VertexData v )
 			{
-				FragmentInput f;
+				FragmentData f;
 
 				switch( _Mode )
 				{
@@ -73,7 +73,7 @@
 				return f;
 			}
 
-			float4 Fragment( FragmentInput f ) : COLOR
+			float4 Fragment( FragmentData f ) : COLOR
 			{
 				return tex2D(_Texture, f.uv) * _Color;
 			}
