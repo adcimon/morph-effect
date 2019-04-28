@@ -2,7 +2,7 @@
 {
 	Properties
 	{
-		_Texture("Texture", 2D) = "white" { }
+		_MainTex("Texture", 2D) = "white" { }
 		_Color("Main Color", Color) = (1, 1, 1, 1)
 		[Enum(None, 0, Cube, 1, Sphere, 2)] _Mode("Mode", float) = 0
 		_Size("Size", float) = 1
@@ -19,7 +19,7 @@
 			#pragma fragment Fragment
 			#include "UnityCG.cginc"
 
-			sampler2D _Texture;
+			sampler2D _MainTex;
 			float4 _Color;
 			float _Mode;
 			float _Size;
@@ -75,7 +75,7 @@
 
 			fixed4 Fragment( Varyings input ) : SV_TARGET
 			{
-				return tex2D(_Texture, input.uv) * _Color;
+				return tex2D(_MainTex, input.uv) * _Color;
 			}
 			ENDHLSL
 		}
