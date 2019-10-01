@@ -3,7 +3,7 @@
 Vertex shader that morphs geometry into primitive shapes.
 
 <p align="center">
-  <img align="center" src="example.gif" title="Dungeons & fat Dragons">
+  <img align="center" src="example.gif" title="Dungeons & fat Dragons"><br>
   Dragon made by the artist <a href="https://assetstore.unity.com/publishers/23554">Dungeon Mason</a> .
 </p>
 
