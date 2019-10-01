@@ -1,6 +1,6 @@
 # Vertex Shader: Simple Morph.
 
-This shader has been made with Unity 2017.3.0. To use it just add a material with the shader to a mesh renderer and attach the provided C# script to it.
+This shader has been made with Unity 2017.3.0. To use it just add a material with the shader to a mesh renderer and attach the provided C# script to the gameobject.
 
 To morph into a cube the vertices are expanded and clamped to fit the cube dimensions.
 ```
