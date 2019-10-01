@@ -1,5 +1,9 @@
 # Vertex Shader: Simple Morph.
 
+Vertex shader that morphs geometry into primitive shapes.
+
+![Example](example.gif "Dungeons & fat Dragons")
+
 This shader has been made with Unity 2017.3.0. To use it just add a material with the shader to a mesh renderer and attach the provided C# script to the gameobject.
 
 To morph into a cube the vertices are expanded and clamped to fit the cube dimensions.
@@ -24,5 +28,3 @@ f.position = UnityObjectToClipPos(lerp(v.position, position, _BlendFactor));
 
 ...
 ```
-
-![Example](example.gif "Dungeons & fat Dragons")
