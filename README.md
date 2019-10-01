@@ -32,4 +32,4 @@ f.position = UnityObjectToClipPos(lerp(v.position, position, _BlendFactor));
 ...
 ```
 References.
-> [Graphic Shaders, Chapter 16.](http://web.engr.oregonstate.edu/~mjb/cgeducation/ShadersBookSecond/)
+> [Graphic Shaders, Chapter 16](http://web.engr.oregonstate.edu/~mjb/cgeducation/ShadersBookSecond/)
