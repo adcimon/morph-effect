@@ -2,9 +2,10 @@
 
 Vertex shader that morphs geometry into primitive shapes.
 
-![Example](example.gif "Dungeons & fat Dragons")
-
-Dragon made by the artist [Dungeon Mason](https://assetstore.unity.com/publishers/23554)
+<p align="center">
+  <img align="center" src="example.gif" title="Dungeons & fat Dragons">
+  Dragon made by the artist [Dungeon Mason](https://assetstore.unity.com/publishers/23554)
+</p>
 
 This shader has been made with Unity 2017.3.0. To use it just add a material with the shader to a mesh renderer and attach the provided C# script to the gameobject.
 
