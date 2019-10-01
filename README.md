@@ -1,7 +1,28 @@
 # Vertex Shader: Simple Morph.
 
-This repository contains the use case described <a href="https://aquarterofpixel.github.io/2018/05/26/vertex-shader-simple-morph/">here</a>.
+This shader has been made with Unity 2017.3.0. To use it just add a material with the shader to a mesh renderer and attach the provided C# script to it.
+
+To morph into a cube the vertices are expanded and clamped to fit the cube dimensions.
+```
+...
+
+float4 position = v.position;
+position.xyz *= _OffsetFactor / length(position.xyz);
+position.xyz = clamp(position.xyz, -_Size, _Size);
+f.position = UnityObjectToClipPos(lerp(v.position, position, _BlendFactor));
+
+...
+```
+
+To morph into a sphere the vertices are expanded but not clamped.
+```
+...
+
+float4 position = v.position;
+position.xyz *= _OffsetFactor / length(position.xyz);
+f.position = UnityObjectToClipPos(lerp(v.position, position, _BlendFactor));
+
+...
+```
 
 ![Example](example.gif "Dungeons & fat Dragons")
-
-Made with Unity 2017.3.0.
