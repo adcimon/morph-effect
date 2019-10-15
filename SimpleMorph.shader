@@ -2,8 +2,8 @@
 {
 	Properties
 	{
-		_MainTex("Texture", 2D) = "white" { }
-		_Color("Main Color", Color) = (1, 1, 1, 1)
+		_Color("Color", Color) = (1, 1, 1, 1)
+		_MainTex("Main Texture", 2D) = "white" { }
 		[Enum(None, 0, Cube, 1, Sphere, 2)] _Mode("Mode", float) = 0
 		_Size("Size", float) = 1
 		_BlendFactor("Blend Factor", float) = 0
@@ -73,7 +73,7 @@
 				return output;
 			}
 
-			fixed4 Fragment( Varyings input ) : SV_TARGET
+			half4 Fragment( Varyings input ) : SV_TARGET
 			{
 				return tex2D(_MainTex, input.uv) * _Color;
 			}
