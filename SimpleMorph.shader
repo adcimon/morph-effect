@@ -19,8 +19,8 @@
 			#pragma fragment Fragment
 			#include "UnityCG.cginc"
 
-			sampler2D _MainTex;
 			float4 _Color;
+			sampler2D _MainTex;
 			float _Mode;
 			float _Size;
 			float _BlendFactor;
