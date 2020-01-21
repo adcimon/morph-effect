@@ -7,7 +7,7 @@ Vertex shader that morphs geometry into primitive shapes.
   Dragon made by the artist <a href="https://assetstore.unity.com/publishers/23554">Dungeon Mason</a>.
 </p>
 
-This shader has been made with Unity 2017.3.0. To use it just add a material with the shader to a mesh renderer and attach the provided C# script to the gameobject.
+This use case has been made with Unity. To use the shader just add a material to a mesh renderer and attach the provided C# script to the gameobject.
 
 To morph into a cube the vertices are expanded and clamped to fit the cube dimensions.
 ```
