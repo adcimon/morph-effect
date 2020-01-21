@@ -1,4 +1,4 @@
-# Vertex Shader: Simple Morph.
+# Vertex Shader: Simple Morph
 
 Vertex shader that morphs geometry into primitive shapes.
 
