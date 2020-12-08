@@ -1,10 +1,9 @@
-# Vertex Shader: Simple Morph
+# Vertex Shader: Morph Effect
 
 Vertex shader that morphs geometry into primitive shapes.
 
 <p align="center">
-  <img align="center" src="example.gif" title="Dungeons & fat Dragons"><br>
-  Dragon made by the artist <a href="https://assetstore.unity.com/publishers/23554">Dungeon Mason</a>.
+  <img align="center" src="example.gif"><br>
 </p>
 
 This use case has been made with Unity. To use the shader just add a material to a mesh renderer and attach the provided C# script to the gameobject.
