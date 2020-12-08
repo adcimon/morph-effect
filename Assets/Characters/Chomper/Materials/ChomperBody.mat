@@ -135,7 +135,7 @@ Material:
     - _NoiseAmount: 0.4
     - _NoiseStrength: 0.087
     - _OcclusionStrength: 1
-    - _Offset: 1
+    - _Offset: 3
     - _Parallax: 0.02
     - _QueueOffset: 0
     - _ReceiveShadows: 1
