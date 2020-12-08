@@ -8,12 +8,12 @@ Vertex shader that morphs geometry into primitive shapes.
 
 To morph into a sphere the vertices are expanded.
 <p align="center">
-  <img align="center" src="sphere_morph.gif"><br>
+  <img align="center" src="sphere_morph.png"><br>
 </p>
 
 To morph into a cube the vertices are expanded and clamped to fit the cube dimensions.
 <p align="center">
-  <img align="center" src="cube_morph.gif"><br>
+  <img align="center" src="cube_morph.png"><br>
 </p>
 
 References.
