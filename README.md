@@ -6,29 +6,15 @@ Vertex shader that morphs geometry into primitive shapes.
   <img align="center" src="example.gif"><br>
 </p>
 
-This use case has been made with Unity. To use the shader just add a material to a mesh renderer and attach the provided C# script to the gameobject.
+To morph into a sphere the vertices are expanded.
+<p align="center">
+  <img align="center" src="sphere_morph.gif"><br>
+</p>
 
 To morph into a cube the vertices are expanded and clamped to fit the cube dimensions.
-```
-...
+<p align="center">
+  <img align="center" src="cube_morph.gif"><br>
+</p>
 
-float4 position = v.position;
-position.xyz *= _OffsetFactor / length(position.xyz);
-position.xyz = clamp(position.xyz, -_Size, _Size);
-f.position = UnityObjectToClipPos(lerp(v.position, position, _BlendFactor));
-
-...
-```
-
-To morph into a sphere the vertices are expanded but not clamped.
-```
-...
-
-float4 position = v.position;
-position.xyz *= _OffsetFactor / length(position.xyz);
-f.position = UnityObjectToClipPos(lerp(v.position, position, _BlendFactor));
-
-...
-```
 References.
 > [Graphic Shaders, Chapter 16](http://web.engr.oregonstate.edu/~mjb/cgeducation/ShadersBookSecond/)
