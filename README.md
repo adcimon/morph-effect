@@ -3,6 +3,7 @@
 Vertex shader that morphs geometry into primitive shapes.
 
 <p align="center">
+  <img align="center" src="example.gif"><br>
 </p>
 
 To morph into a sphere the vertices are expanded.
