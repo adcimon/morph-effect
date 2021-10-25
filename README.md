@@ -1,4 +1,4 @@
-# Vertex Shader: Morph Effect
+# Morph Effect
 
 Vertex shader that morphs geometry into primitive shapes.
 
